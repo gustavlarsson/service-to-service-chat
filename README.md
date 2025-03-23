@@ -68,8 +68,8 @@ CREATE TABLE direct_messages (
 
 <h2>Reflections: </h2>
 <h4>Language choice</h4>
-I am definetely unused to writing Typescript. This took some time to get into that mindset. Therefore, the code doesn't really hold the highest of standards. 
-One example is typescript types, I have forgotten how to easily write these and I chose to not spend time on relearning this. This is something I would like to have in the code to have strong types instead of a lot of any casts. 
+I am not used to writing Typescript. This took some time to get into that mindset. Therefore, the code doesn't really hold the highest of standards. 
+One example is Typescript types, I have forgotten how to easily write these and I chose to not spend time on relearning this. This is something I would like to have in the code to have strong types instead any casts. 
 
 <h4>Tech choices</h4>
 Postgresql I'm comfortable with. Things I would want to add is indecies for quicker lookups.
@@ -81,6 +81,5 @@ DMs doesn't work properly.
 
 
 <h3>Time Spent: 4 hours-ish</h3>
-1 hour spent on researching, choosing and setting up tech stack.
+1 hour-ish spent on researching, choosing and setting up tech stack.
 3 hours-ish coding the server and client.
-30 min writing README.
