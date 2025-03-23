@@ -1,0 +1,26 @@
+syntax = "proto3";
+service ChatService {
+   rpc JoinChannel (JoinRequest) returns (stream Message);
+   rpc SendMessage (Message) returns (MessageResponse);
+   rpc SendDirectMessage (DirectMessage) returns (DirectMessageResponse);
+   rpc LoginUser (LoginRequest) returns (Ack);
+   rpc LeaveChannel (LeaveRequest) returns (Ack);
+}
+message LoginRequest { string username = 1; }
+message JoinRequest { string username = 1; string channel = 2; }
+message LeaveRequest { string username = 1; string channel = 2; }
+message Message { string sender = 1; string content = 2; string channel = 3; }
+message DirectMessage { string sender = 1; string receiver = 2; string content = 3; }
+message Ack { bool success = 1; }
+message MessageResponse {
+   string sender = 1;
+   string channel = 2;
+   string content = 3;
+   string timestamp = 4;
+ }
+message DirectMessageResponse {
+   string sender = 1;
+   string receiver = 2;
+   string content = 3;
+   string timestamp = 4;
+ }
